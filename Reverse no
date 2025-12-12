@@ -1,0 +1,10 @@
+def revrsenumber(num):
+    if(num>0):
+        last = num%10
+        if(num//10>0):
+            n1 = revrsenumber((int)(num//10))
+            return last*pow(10,len(str(n1))) + n1
+        return num
+n = int(input("Enter the no. : "))
+print("Reversed No. : ", revrsenumber(n))    
+     
