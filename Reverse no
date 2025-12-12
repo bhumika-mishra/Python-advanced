@@ -1,4 +1,4 @@
-def revrsenumber(num):
+'''def revrsenumber(num):
     if(num>0):
         last = num%10
         if(num//10>0):
@@ -6,5 +6,14 @@ def revrsenumber(num):
             return last*pow(10,len(str(n1))) + n1
         return num
 n = int(input("Enter the no. : "))
-print("Reversed No. : ", revrsenumber(n))    
+print("Reversed No. : ", revrsenumber(n))'''    
+
+def reversestring(s):
+    if len(s) == 1:
+        return s[0]
+    first = s[0]
+    return reversestring(s[1:]) + first
+s = "Tom"
+print(reversestring(s))
+
      
