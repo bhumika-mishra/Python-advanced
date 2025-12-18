@@ -1,0 +1,13 @@
+def slargest(a,a_size):
+    largest = secondlargest = -2147483648
+    for i in a:
+        if (i>largest):
+            secondlargest = largest
+            largest = i
+        elif (i>secondlargest and i != largest):
+            secondlargest = i
+    print(secondlargest)
+a = [1,2,3,4,5,6,7,8,9,1] 
+a_size = len(a)
+slargest(a,a_size)
+            
